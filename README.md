@@ -1,4 +1,5 @@
 ### Hi there 👋
+![hit counter](https://s04.flagcounter.com/count/9Np6/bg_FFFFFF/txt_000000/border_CCCCCC/columns_6/maxflags_12/viewers_0/labels_1/pageviews_0/flags_0/percent_0/)
 
 <!--
 **openscript/openscript** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
