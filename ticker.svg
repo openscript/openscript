@@ -1,0 +1,6 @@
+<svg width="500" height="100">
+  <text x="0" y="80" font-size="42">Wheee :)
+    <animate attributeType="XML" attributeName="x" 
+         values="520;-880;520" dur="15s" repeatCount="indefinite"/>
+  </text>
+</svg>
