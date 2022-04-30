@@ -20,7 +20,7 @@ jobs:
             const query = `query($owner:String!, $name:String!, $issue_number:Int!) {
               repository(owner:$owner, name:$name){
                 issue(number:$issue_number) {
-                  comments(last:10) {
+                  comments(last:10,orderBy:{direction:DESC, field:UPDATED_AT}) {
                     nodes {
                       author {
                         login
@@ -38,4 +38,13 @@ jobs:
               issue_number: context.issue.number
             }
             const result = await github.graphql(query, variables)
-            console.log(result.repository.issue.comments)
+
+            const fileSystem = require('fs');
+            const readme = fileSystem.readFileSync('README.md', 'utf8');
+            fileSystem.writeFileSync('README.md', readme.replace(/(?<=## Guestbook\n)[\S\s]*?(?=#|$(?![\n]))/gm, result.repository.issue.comments), 'utf8');
+      - name: Push guestbook update
+        run: |
+          git config --global user.name 'Github Actions'
+          git config --global user.email '1105080+openscript@users.noreply.github.com'
+          git commit -am 'feat: update guestbook'
+          git push
