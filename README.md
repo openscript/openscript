@@ -7,13 +7,13 @@ Great to have you here! Don't hesitate to say hello:
 ## Guestbook ([🆕🖊️ add an entry](https://github.com/openscript/openscript/issues/1#issuecomment-new))
 | Name | Date | Message |
 |---|---|---|
-|openscript|2022-04-30T22:44:21Z|Test 10|
-|openscript|2022-04-30T22:38:37Z|Test 9|
-|openscript|2022-04-30T22:30:45Z|Test 8|
-|openscript|2022-04-30T21:25:41Z|Test 7|
-|openscript|2022-04-30T21:24:14Z|Test 6|
-|openscript|2022-04-30T21:22:39Z|Test 5|
-|openscript|2022-04-30T14:38:08Z|Test 4|
-|openscript|2022-04-30T14:32:23Z|Test 3|
-|openscript|2022-04-30T14:31:46Z|Test 2|
-|openscript|2022-04-30T14:28:33Z|Test 1|
+|openscript|4/30/2022, 10:44:21 PM|Test 10|
+|openscript|4/30/2022, 10:38:37 PM|Test 9|
+|openscript|4/30/2022, 10:30:45 PM|Test 8|
+|openscript|4/30/2022, 9:25:41 PM|Test 7|
+|openscript|4/30/2022, 9:24:14 PM|Test 6|
+|openscript|4/30/2022, 9:22:39 PM|Test 5|
+|openscript|4/30/2022, 2:38:08 PM|Test 4|
+|openscript|4/30/2022, 2:32:23 PM|Test 3|
+|openscript|4/30/2022, 2:31:46 PM|Test 2|
+|openscript|4/30/2022, 2:28:33 PM|Test 1|
