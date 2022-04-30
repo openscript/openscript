@@ -1,0 +1,23 @@
+on:
+  issue_comment:
+    types: [created, edited, deleted]
+
+name: Guestbook
+
+jobs:
+  update_guestbook:
+    name: Update guestbook
+    if: ${{ github.event.issue.title == 'Guestbook' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: Replace comments
+        with: 
+          COMMENTS: ${{ github.event.issue.comments.last(10) }}
+        run: |
+          deno run --allow-env updateGuestbook.ts
