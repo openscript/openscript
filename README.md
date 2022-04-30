@@ -4,7 +4,7 @@ Great to have you here! Don't hesitate to say hello:
 
 - Telegram: https://t.me/reachrobin
 
-## Guestbook
+## Guestbook ([🆕🖊️ add an entry](https://github.com/openscript/openscript/issues/1#issuecomment-new))
 
 openscript: Test 9
 openscript: Test 8
