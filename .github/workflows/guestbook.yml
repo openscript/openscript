@@ -13,11 +13,27 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      - uses: denoland/setup-deno@v1
+      - name: Update guestbook from comments
+        uses: actions/github-script@v6
         with:
-          deno-version: v1.x
-      - name: Replace comments
-        env: 
-          COMMENTS: "${{ github.event.issue.comments(last: 10) }}"
-        run: |
-          deno run --allow-env updateGuestbook.ts
+          script: |
+            const query = `query($owner:String!, $name:String!, $issue_number:Int!) {
+              repository(owner:$owner, name:$name){
+                issue(number:$issue_number) {
+                  comments(last:10) {
+                    nodes {
+                      author
+                      bodyText
+                      updatedAt
+                    }
+                  }
+                }
+              }
+            }`;
+            const variables = {
+              owner: context.repo.owner,
+              name: context.repo.repo,
+              issue_number: context.issue.number
+            }
+            const result = await github.graphql(query, variables)
+            console.log(result)
