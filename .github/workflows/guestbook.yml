@@ -18,6 +18,6 @@ jobs:
           deno-version: v1.x
       - name: Replace comments
         env: 
-          COMMENTS: ${{ github.event.issue.comments }}
+          COMMENTS: "${{ github.event.issue.comments(last: 10) }}"
         run: |
           deno run --allow-env updateGuestbook.ts
