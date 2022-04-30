@@ -22,7 +22,9 @@ jobs:
                 issue(number:$issue_number) {
                   comments(last:10) {
                     nodes {
-                      author
+                      author {
+                        login
+                      }
                       bodyText
                       updatedAt
                     }
