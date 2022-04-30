@@ -5,5 +5,4 @@ Great to have you here! Don't hesitate to say hello:
 - Telegram: https://t.me/reachrobin
 
 ## Guestbook
-
-No entries
+[object Object]
