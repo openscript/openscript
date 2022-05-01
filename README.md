@@ -1,10 +1,10 @@
 # Hello and welcome
 
+<img src="clippy.gif" alt="Clippy is wondering what is going on here" align="right" />
+
 Great to have you here! Don't hesitate to say hello:
 
 - Telegram: https://t.me/reachrobin
-
-![Clippy](clippy.gif)
 
 ## Guestbook ([🆕🖊️ add an entry](https://github.com/openscript/openscript/issues/1#issuecomment-new))
 | Name | Date | Message |
