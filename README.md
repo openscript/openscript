@@ -9,4 +9,5 @@ Great to have you here! Don't hesitate to say hello:
 ## Guestbook ([🆕🖊️ add an entry](https://github.com/openscript/openscript/issues/1#issuecomment-new))
 | Name | Date | Message |
 |---|---|---|
+|[![SemiShogun](https://avatars.githubusercontent.com/u/49059201?s=24&u=afeaa32f28191466b4f8c1ae408174ae304672ac&v=4)SemiShogun](https://github.com/SemiShogun)|5/1/2022, 7:49:17 PM|console.log("This guestbook is awesome!");|
 |[![openscript](https://avatars.githubusercontent.com/u/1105080?s=24&u=1066b35d8537f2e8ab791d845fb3d4aecb0e9e7f&v=4)openscript](https://github.com/openscript)|5/1/2022, 11:12:15 AM|Just testing if the pen is working, so the guests can sign the guestbook. Avatars are shown as well. 📷|
