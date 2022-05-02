@@ -42,6 +42,7 @@ jobs:
             const result = await github.graphql(query, variables)
             const renderComments = (comments) => {
               return comments.reduce((prev, curr) => {
+                const sanitizedText = curr.bodyText.replace("\n", "<br />");
                 return `${prev}|[![${curr.author.login}](${curr.author.avatarUrl})${curr.author.login}](${curr.author.url})|${new Date(curr.updatedAt).toLocaleString()}|${curr.bodyText}|\n`;
               }, "| Name | Date | Message |\n|---|---|---|\n");
             };
