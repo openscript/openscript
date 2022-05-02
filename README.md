@@ -7,6 +7,7 @@ Great to have you here! Don't hesitate to say hello:
 - Telegram: https://t.me/reachrobin
 
 ## Guestbook ([🆕🖊️ add an entry](https://github.com/openscript/openscript/issues/1#issuecomment-new))
+<!-- Guestbook -->
 | Name | Date | Message |
 |---|---|---|
 |[![adrai](https://avatars.githubusercontent.com/u/1086194?s=24&v=4)adrai](https://github.com/adrai)|5/2/2022, 9:25:16 AM|Ohhh, this is interesting...<br />Cool idea...<br />Wer hat's erfunden? 😉 🇨🇭|
@@ -14,3 +15,4 @@ Great to have you here! Don't hesitate to say hello:
 |[![SemiShogun](https://avatars.githubusercontent.com/u/49059201?s=24&u=afeaa32f28191466b4f8c1ae408174ae304672ac&v=4)SemiShogun](https://github.com/SemiShogun)|5/1/2022, 7:49:17 PM|console.log("This guestbook is awesome!");|
 #124; are escaped.|
 |[![SemiShogun](https://avatars.githubusercontent.com/u/49059201?s=24&u=afeaa32f28191466b4f8c1ae408174ae304672ac&v=4)SemiShogun](https://github.com/SemiShogun)|5/1/2022, 7:49:17 PM|console.log("This guestbook is awesome!");|
+<!-- /Guestbook -->
