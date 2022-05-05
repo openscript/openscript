@@ -1,10 +1,4 @@
-# Hello and welcome
-
-<img src="clippy.gif" alt="Clippy is wondering what is going on here" align="right" />
-
-Great to have you here! Don't hesitate to say hello:
-
-- Telegram: https://t.me/reachrobin
+![My metrics](github-metrics.svg)
 
 ## Guestbook ([🆕🖊️ add an entry](https://github.com/openscript/openscript/issues/1#issuecomment-new))
 <!-- Guestbook -->
@@ -19,6 +13,4 @@ Great to have you here! Don't hesitate to say hello:
 |[![SemiShogun](https://avatars.githubusercontent.com/u/49059201?s=24&u=afeaa32f28191466b4f8c1ae408174ae304672ac&v=4)SemiShogun](https://github.com/SemiShogun)|5/1/2022, 7:49:17 PM|console.log("This guestbook is awesome!");|
 <!-- /Guestbook -->
 
-## Metrics
-
-![My metrics](github-metrics.svg)
+<img src="clippy.gif" alt="Clippy is wondering what is going on here" align="right" />
