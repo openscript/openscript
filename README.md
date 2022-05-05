@@ -21,4 +21,4 @@ Great to have you here! Don't hesitate to say hello:
 
 ## Metrics
 
-[My metrics](github-metrics.svg)
+![My metrics](github-metrics.svg)
