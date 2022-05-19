@@ -1,7 +1,8 @@
 ![My metrics](github-metrics.svg)
 
-
-<img src="clippy.gif" alt="Clippy is wondering what is going on here" align="center" />
+<p align="center">
+  <img src="clippy.gif" alt="Clippy is wondering what is going on here" />
+</p>
 
 ## Guestbook ([🆕🖊️ add an entry](https://github.com/openscript/openscript/issues/1#issuecomment-new))
 <!-- Guestbook -->
