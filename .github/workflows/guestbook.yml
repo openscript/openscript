@@ -8,7 +8,7 @@ name: Guestbook
 jobs:
   update_guestbook:
     name: Update guestbook
-    if: ${{ github.event.issue.title == 'Guestbook' }}
+    if: ${{ github.event.issue.title == '➡️ Guestbook 📖 ✏️ ⬅️' }}
     runs-on: ubuntu-latest
 
     steps:
