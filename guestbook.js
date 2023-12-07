@@ -5,7 +5,7 @@ module.exports = async ({github, context}) => {
         comments(first:10,orderBy:{direction:DESC, field:UPDATED_AT}) {
           nodes {
             author {
-              avatarUrl(size: 32)
+              avatarUrl(size: 48)
               login
               url
             }
@@ -25,7 +25,7 @@ module.exports = async ({github, context}) => {
   const renderComments = (comments) => {
     return comments.reduce((prev, curr) => {
       const sanitizedText = curr.bodyText.replace('<', '&lt;').replace('>', '&gt;').replace(/(\r\n|\r|\n)/g, "<br />").replace('|', '&#124;').replace('[', '&#91;');
-      return `${prev}|[!<img src="${curr.author.avatarUrl}" alt="${curr.author.login}" width="32" /><br />${curr.author.login}](${curr.author.url})|${new Date(curr.updatedAt).toLocaleString()}|${sanitizedText}|\n`;
+      return `${prev}|[<img src="${curr.author.avatarUrl}" alt="${curr.author.login}" width="48" /><br />${curr.author.login}](${curr.author.url})|${new Date(curr.updatedAt).toLocaleString()}|${sanitizedText}|\n`;
     }, "| Name | Date | Message |\n|---|---|---|\n");
   };
 
