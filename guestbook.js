@@ -1,4 +1,5 @@
 module.exports = async ({github, context}) => {
+  const COMMENT_URL = "https://github.com/openscript/openscript/issues/1#issuecomment-"
   const query = `query($owner:String!, $name:String!, $issue_number:Int!) {
     repository(owner:$owner, name:$name){
       issue(number:$issue_number) {
@@ -9,6 +10,7 @@ module.exports = async ({github, context}) => {
               login
               url
             }
+            id
             bodyText
             updatedAt
           }
@@ -24,8 +26,8 @@ module.exports = async ({github, context}) => {
   const result = await github.graphql(query, variables)
   const renderComments = (comments) => {
     return comments.reduce((prev, curr) => {
-      const sanitizedText = curr.bodyText.replace('<', '&lt;').replace('>', '&gt;').replace(/(\r\n|\r|\n)/g, "<br />").replace('|', '&#124;').replace('[', '&#91;');
-      return `${prev}|[<img src="${curr.author.avatarUrl}" alt="${curr.author.login}" width="48" /><br />${curr.author.login}](${curr.author.url})|${new Date(curr.updatedAt).toLocaleString()}|${sanitizedText}|\n`;
+      let sanitizedText = curr.bodyText.replace('<', '&lt;').replace('>', '&gt;').replace(/(\r\n|\r|\n)/g, "<br />").replace('|', '&#124;').replace('[', '&#91;');
+      return `${prev}|[<img src="${curr.author.avatarUrl}" alt="${curr.author.login}" width="48" /><br />${curr.author.login}](${curr.author.url})|${new Date(curr.updatedAt).toLocaleString()}|${sanitizedText}<br /><hr /><br />[See comment](${COMMENT_URL}${curr.id})|\n`;
     }, "| Name | Date | Message |\n|---|---|---|\n");
   };
 
