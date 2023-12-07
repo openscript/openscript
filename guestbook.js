@@ -24,7 +24,7 @@ module.exports = async ({github, context}) => {
   const result = await github.graphql(query, variables)
   const renderComments = (comments) => {
     return comments.reduce((prev, curr) => {
-      const sanitizedText = curr.bodyText.replace(/(\r\n|\r|\n)/g, "<br />").replace('|', '&#124;').replace('<', '&lt;').replace('>', '&gt;').replace('[', '&#91;');
+      const sanitizedText = curr.bodyText.replace('<', '&lt;').replace('>', '&gt;').replace(/(\r\n|\r|\n)/g, "<br />").replace('|', '&#124;').replace('[', '&#91;');
       return `${prev}|[![${curr.author.login}](${curr.author.avatarUrl})<br />${curr.author.login}](${curr.author.url})|${new Date(curr.updatedAt).toLocaleString()}|${sanitizedText}|\n`;
     }, "| Name | Date | Message |\n|---|---|---|\n");
   };
